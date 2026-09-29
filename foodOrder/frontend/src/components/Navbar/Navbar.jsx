@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../../assets/assets.js";
+import "./Navbar.css";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState("menu");
   return (
     <div className="navbar">
       <img src={assets.logo} alt="logo" />
       <ul className="navbar-menu">
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li
+          className={menu === "home" ? "active" : ""}
+          onClick={() => setMenu("home")}
+        >
+          Home
+        </li>
+        <li
+          className={menu === "menu" ? "active" : ""}
+          onClick={() => setMenu("menu")}
+        >
+          Menu
+        </li>
+        <li
+          className={menu === "about" ? "active" : ""}
+          onClick={() => setMenu("about")}
+        >
+          About
+        </li>
+        <li
+          className={menu === "contact" ? "active" : ""}
+          onClick={() => setMenu("contact")}
+        >
+          Contact
+        </li>
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="Search" />
