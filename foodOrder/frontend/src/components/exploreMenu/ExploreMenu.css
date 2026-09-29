@@ -1,0 +1,38 @@
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.explore-menu h1 {
+  font-size: 2rem;
+  color: #1a3d56;
+}
+.explore-menu-text {
+  max-width: 600px;
+  color: #1a3d56;
+}
+.explore-menu-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+  margin: 20px 0px;
+  overflow-x: scroll;
+  /* scrollbar-width: none; Firefox */
+}
+.explore-menu-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.explore-menu-list img {
+  cursor: pointer;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.explore-menu-list h3 {
+  font-size: 1.2rem;
+  color: #255578;
+}
+.explore-menu hr {
+  border: 1px solid #1c415b3d;
+  margin: 20px 0px;
+}
