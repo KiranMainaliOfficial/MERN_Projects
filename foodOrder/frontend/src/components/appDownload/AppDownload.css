@@ -1,0 +1,22 @@
+.app-download-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+.app-download-container h2 span {
+  background-color: yellow;
+}
+.app-download img {
+  height: 50px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.app-download img:hover {
+  transform: scale(1.1);
+}
+.app-download {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 70px;
+}

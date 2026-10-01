@@ -9,4 +9,12 @@
 .food-item-image {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
+  padding: 10px;
+}
+p {
+  padding-left: 10px;
+}
+img {
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
