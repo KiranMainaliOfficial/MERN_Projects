@@ -36,3 +36,10 @@
   border: 1px solid #1c415b3d;
   margin: 20px 0px;
 }
+
+.explore-menu-list-item .active {
+  border: 3px dashed #1a3d56;
+  padding: 4px;
+  box-sizing: border-box;
+  transform: scale(1.01);
+}
