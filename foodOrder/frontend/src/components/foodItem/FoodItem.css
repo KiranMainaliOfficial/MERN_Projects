@@ -11,10 +11,25 @@
   border-radius: 15px 15px 0px 0px;
   padding: 10px;
 }
-p {
+.food-item p {
   padding-left: 10px;
 }
-img {
+.food-item img {
   padding-left: 10px;
+  margin-bottom: 10px;
+}
+.food-item-rating {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  align-items: center;
+}
+.food-item-rating img {
+  max-width: 60px;
+  height: fit-content;
+}
+.food-item-rating p {
+  font-size: 1.2rem;
+  font-weight: bold;
   margin-bottom: 10px;
 }

@@ -12,10 +12,26 @@ const ExploreMenu = ({ category, setCategory }) => {
         {menu_list.map((items, index) => {
           return (
             <div
-              onClick={() =>
-                setCategory((prev) =>
-                  prev === items.menu_name ? "All" : items.menu_name,
-                )
+              onClick={
+                // () => {
+                //   setCategory = (category) => {
+                //     console.log(category);
+                //     if (category === items.menu_name) {
+                //       setCategory = "All";
+                //     } else {
+                //       setCategory = items.menu_name;
+                //     }
+                //   };
+                // }
+
+                // prev === items.menu_name ? "All" : items.menu_name,
+                (category) => {
+                  if (category === items.menu_name) {
+                    setCategory("All");
+                  } else {
+                    setCategory(items.menu_name);
+                  }
+                }
               }
               className="explore-menu-list-item"
               key={index}

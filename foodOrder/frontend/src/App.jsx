@@ -6,8 +6,10 @@ import Home from "./pages/home/Home.jsx";
 import Cart from "./pages/cart/Cart.jsx";
 import PlaceOrder from "./pages/placeOrder/PlaceOrder.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import { StoreContext } from "./context/StoreContext.jsx";
 
 function App() {
+  console.log(StoreContext);
   return (
     <>
       <div className="app">
