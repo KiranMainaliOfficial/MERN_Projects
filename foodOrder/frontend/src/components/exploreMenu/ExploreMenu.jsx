@@ -2,6 +2,7 @@ import React from "react";
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/assets";
 const ExploreMenu = ({ category, setCategory }) => {
+  console.log(category);
   return (
     <div className="explore-menu" id="explore-menu">
       <h1>Explore Menu</h1>
@@ -13,6 +14,10 @@ const ExploreMenu = ({ category, setCategory }) => {
           return (
             <div
               onClick={
+                () =>
+                  setCategory((prev) =>
+                    prev === items.menu_name ? "All" : items.menu_name,
+                  )
                 // () => {
                 //   setCategory = (category) => {
                 //     console.log(category);
@@ -24,14 +29,17 @@ const ExploreMenu = ({ category, setCategory }) => {
                 //   };
                 // }
 
-                // prev === items.menu_name ? "All" : items.menu_name,
-                (category) => {
-                  if (category === items.menu_name) {
-                    setCategory("All");
-                  } else {
-                    setCategory(items.menu_name);
-                  }
-                }
+                // (setCategory = (prev) =>
+                //   prev === items.menu_name ? "All" : items.menu_name)
+                // (category) => {
+                //   console.log(category);
+                //   if (category === items.menu_name) {
+                //     setCategory("All");
+                //   }
+                //   if (category === "All") {
+                //     setCategory(items.menu_name);
+                //   }
+                // }
               }
               className="explore-menu-list-item"
               key={index}

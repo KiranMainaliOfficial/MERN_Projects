@@ -29,3 +29,23 @@
   color: rgb(248, 255, 255);
   text-shadow: 2px 2px 5px black;
 }
+
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    height: 38vw;
+  }
+  .header-contents {
+    max-width: 65%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .header-contents button {
+    padding: 2vw 4vw;
+  }
+}
