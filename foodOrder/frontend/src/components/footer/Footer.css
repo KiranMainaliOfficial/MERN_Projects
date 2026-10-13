@@ -53,3 +53,13 @@ footer a {
   font-size: 0.9rem;
   margin-bottom: 5px;
 }
+@media (max-width: 750px) {
+  .upper-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer .copy {
+    text-align: center;
+  }
+}
